@@ -180,7 +180,7 @@ static inline u32* getOvrAddr(tic_mem* tic, s32 x, s32 y)
 	enum {Top = (TIC80_FULLHEIGHT-TIC80_HEIGHT)/2};
 	enum {Left = (TIC80_FULLWIDTH-TIC80_WIDTH)/2};
 
-	return tic->screen + x + (y << TIC80_FULLWIDTH_BITS) + (Left + Top * TIC80_FULLWIDTH);
+	return tic->screen + x + (y * TIC80_FULLWIDTH) + (Left + Top * TIC80_FULLWIDTH);
 }
 
 static void setPixelOvr(tic_mem* tic, s32 x, s32 y, u8 color)
