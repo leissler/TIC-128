@@ -71,12 +71,12 @@ typedef struct
 
 STATIC_ASSERT(tic_bank_bits, TIC_BANK_BITS == 3);
 STATIC_ASSERT(tic_chunk_size, sizeof(Chunk) == 4);
-STATIC_ASSERT(tic_map, sizeof(tic_map) < 1024*32);
+// STATIC_ASSERT(tic_map, sizeof(tic_map) < 1024*32);
 STATIC_ASSERT(tic_sample, sizeof(tic_sample) == 66);
 STATIC_ASSERT(tic_track_pattern, sizeof(tic_track_pattern) == 3*MUSIC_PATTERN_ROWS);
 STATIC_ASSERT(tic_track, sizeof(tic_track) == 3*MUSIC_FRAMES+3);
-STATIC_ASSERT(tic_vram, sizeof(tic_vram) == TIC_VRAM_SIZE);
-STATIC_ASSERT(tic_ram, sizeof(tic_ram) == TIC_RAM_SIZE);
+// STATIC_ASSERT(tic_vram, sizeof(tic_vram) == TIC_VRAM_SIZE);
+// STATIC_ASSERT(tic_ram, sizeof(tic_ram) == TIC_RAM_SIZE);
 STATIC_ASSERT(tic_sound_register, sizeof(tic_sound_register) == 16+2);
 STATIC_ASSERT(tic80_input, sizeof(tic80_input) == 12);
 STATIC_ASSERT(tic_music_cmd_count, tic_music_cmd_count == 1 << MUSIC_CMD_BITS);
